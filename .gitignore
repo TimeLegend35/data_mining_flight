@@ -1,5 +1,8 @@
+# Slides
+/slides/
+
 # Data
-/data/
+/data/raw/
 
 # Mac OS-specific storage files
 .DS_Store

@@ -2,12 +2,17 @@
 pip = "*"
 python-dotenv = "*"
 ruff = "*"
-"data_mining_flight" ={editable = true, path = "."}
 kaggle = "*"
-pandas = "*"
 kagglehub = "*"
+pandas = "*"
+matplotlib = "*"
+torch = "*"
+scipy = "*"
+ipykernel = "*"
+jupyterlab = "*"
+seaborn = "*"
+scikit-learn = "*"
 
 [requires]
 python_version = "3.11.6"
 
-[dev-packages]

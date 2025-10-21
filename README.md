@@ -59,3 +59,28 @@ A short description of the project.
 
 --------
 
+
+## Kaggle Dataset
+
+We use the dataset from Dillon Wong found at: https://www.kaggle.com/datasets/dilwong/flightprices
+
+## Truncating Large Raw CSV
+
+Create a middle-day subset:
+```
+pipenv run python -m data_mining_flight.turncate_data
+```
+
+Options:
+```
+--csv /path/to/itineraries.csv      # optional (auto-detect if omitted)
+--date-column searchDate            # or flightDate
+--chunksize 300000                  # adjust memory / speed tradeoff
+--middle-date 2022-07-13            # force a specific day
+--no-plot                           # skip plot
+```
+
+Outputs go to data/turncated:
+- {date_column}_daily_counts.csv
+- {date_column}_{middle_day}.csv
+- {date_column}_counts.png (if matplotlib available)
