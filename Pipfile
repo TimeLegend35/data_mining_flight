@@ -13,6 +13,7 @@ jupyterlab = "*"
 seaborn = "*"
 scikit-learn = "*"
 tabulate = "*"
+catboost = "*"
 
 [requires]
 python_version = "3.11.*"
